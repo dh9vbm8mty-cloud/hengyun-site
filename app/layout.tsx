@@ -1,3 +1,4 @@
+// BUILD_MARKER: 2026-02-03-1
 import type { Metadata } from "next";
 import "./globals.css";
 
