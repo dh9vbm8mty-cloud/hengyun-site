@@ -8,20 +8,23 @@ export const metadata: Metadata = {
     template: "%s · HENGYUN",
   },
   description:
-    "Deployable pavement cooling and low-grade thermal recovery systems for urban demonstration sites.",
+    "A deployable system for urban pavement cooling and thermal energy recovery.",
+
   openGraph: {
     title: "HENGYUN · STEPS",
     description:
-      "Pavement cooling and low-grade thermal recovery for urban demonstration sites.",
+      "A deployable system for urban pavement cooling and thermal energy recovery.",
     siteName: "HENGYUN Technology",
     type: "website",
   },
+
   twitter: {
     card: "summary",
     title: "HENGYUN · STEPS",
     description:
-      "Pavement cooling and low-grade thermal recovery for urban demonstration sites.",
+      "A deployable system for urban pavement cooling and thermal energy recovery.",
   },
+
   icons: {
     icon: "/favicon.ico",
   },
@@ -29,9 +32,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
