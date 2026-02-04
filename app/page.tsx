@@ -136,7 +136,7 @@ export default function Home() {
             {/* Replace with your real email when ready */}
             <div className="mt-4 rounded-lg border p-4">
               <div className="text-sm text-gray-500">Email</div>
-              <div className="mt-1 font-medium">contact@hengyun-tech.com</div>
+              <div className="mt-1 font-medium">founder@hengyun-tech.com</div>
               <div className="mt-2 text-xs text-gray-500"></div>
             </div>
             <p className="mt-6 text-xs text-gray-500">
