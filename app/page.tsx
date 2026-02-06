@@ -11,7 +11,7 @@ export default function Home() {
             <div className="leading-tight">
               <div className="font-semibold tracking-tight">HENGYUN Technology</div>
               <div className="text-xs text-gray-500">
-                Deployable thermal infrastructure solutions for urban environments
+                Deployable thermal infrastructure systems for urban environments
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function Home() {
         <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight">
-              A Deployable System for Urban Pavement Cooling and Thermal Energy Recovery
+              A Deployable System for Urban Pavement Cooling and Thermal Infrastructure Research
             </h1>
             <p className="mt-4 text-gray-600 text-lg">
               A deployable system for measurable surface cooling and thermal data collection.
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             <p className="mt-6 text-sm text-gray-500">
-              都市示範場域用的鋪面降溫與熱能回收系統，強調可部署與可量測。
+              都市示範場域用的鋪面降溫與熱行為量測系統，強調可部署與可量測。
             </p>
           </div>
         </section>
@@ -58,7 +58,8 @@ export default function Home() {
             <div>
               <h2 className="text-sm font-semibold text-gray-900">About HENGYUN</h2>
               <p className="mt-3 text-gray-600">
-                HENGYUN Technology develops deployable thermal infrastructure solutions for urban environments.
+                HENGYUN Technology develops deployable thermal infrastructure systems for urban environments, focusing on
+                field-ready deployment and measurement-oriented operation.
               </p>
             </div>
 
@@ -76,8 +77,8 @@ export default function Home() {
             <div id="steps" className="scroll-mt-24">
               <h2 className="text-sm font-semibold text-gray-900">STEPS</h2>
               <p className="mt-3 text-gray-600">
-                STEPS is an application under the AMPS platform, focusing on pavement surface cooling and thermal energy
-                recovery for urban demonstration settings.
+                STEPS is an application under the AMPS platform, focusing on pavement surface cooling and thermal
+                behavior measurement for urban demonstration settings.
               </p>
               <p className="mt-3 text-xs text-gray-500">
                 Sustainable Thermal Energy Pavement System (application under AMPS)
@@ -138,7 +139,7 @@ export default function Home() {
             <div>
               <div className="font-semibold">HENGYUN Technology</div>
               <div className="mt-2 text-sm text-gray-600">
-                Deployable thermal infrastructure solutions for urban environments.
+                Deployable thermal infrastructure systems for urban environments.
               </div>
             </div>
 
