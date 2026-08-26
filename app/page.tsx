@@ -2,6 +2,11 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { Fragment } from "react";
 const pathway = ["Evidence", "Analysis", "Design", "Prototype", "Validation", "Field"];
+const pathwayPairs = [
+  ["Evidence", "Analysis"],
+  ["Design", "Prototype"],
+  ["Validation", "Field"],
+];
 
 const principles = [
   ["Design with evidence.", "Engineering decisions are grounded in published research, analysis, measured observations, and documented assumptions."],
@@ -80,12 +85,21 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-9 overflow-x-auto">
-                  <div className="grid min-w-[700px] grid-cols-11 items-center border-y rule py-5">
+                <div className="mt-9">
+                  <div className="hidden w-full grid-cols-11 items-center border-y rule py-5 md:grid">
                     {pathway.map((stage, index) => (
                       <Fragment key={stage}>
                         <span className="text-center text-[13px] font-medium">{stage}</span>
                         {index < pathway.length - 1 && <span className="text-center text-black/25">→</span>}
+                      </Fragment>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-x-2 gap-y-3 border-y rule py-5 md:hidden">
+                    {pathwayPairs.map(([from, to]) => (
+                      <Fragment key={`${from}-${to}`}>
+                        <span className="min-w-0 text-center text-[13px] font-medium">{from}</span>
+                        <span className="text-center text-black/25">→</span>
+                        <span className="min-w-0 text-center text-[13px] font-medium">{to}</span>
                       </Fragment>
                     ))}
                   </div>
