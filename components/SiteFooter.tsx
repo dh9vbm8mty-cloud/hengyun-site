@@ -23,7 +23,7 @@ export default function SiteFooter() {
           </div>
 
           <div className="text-[13px] text-white/55">
-            <div>founder@hengyun-tech.com</div>
+            <a href="mailto:founder@hengyun-tech.com" className="text-inherit no-underline">founder@hengyun-tech.com</a>
           </div>
         </div>
 

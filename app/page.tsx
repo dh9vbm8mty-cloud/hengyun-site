@@ -229,7 +229,7 @@ export default function Home() {
               </p>
               <div>
                 <div className="eyebrow text-black/40">Company Email</div>
-                <div className="mt-4 text-[22px] font-semibold tracking-[-.025em]">founder@hengyun-tech.com</div>
+                <a href="mailto:founder@hengyun-tech.com" className="mt-4 text-[22px] font-semibold tracking-[-.025em] text-inherit no-underline">founder@hengyun-tech.com</a>
               </div>
             </div>
           </div>
