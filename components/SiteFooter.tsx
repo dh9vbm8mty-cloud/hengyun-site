@@ -5,8 +5,10 @@ export default function SiteFooter() {
     <footer className="bg-[#1b1f22] text-[#f4f3ef]">
       <div className="mx-auto max-w-[1180px] px-6 py-10 md:px-8">
         <div className="grid gap-10 border-b border-white/12 pb-9 md:grid-cols-[1.6fr_1fr_1fr]">
-          <div className="flex items-center gap-2">
-            <img src="/hengyun-logo-transparent.png" alt="HENGYUN" className="h-8 w-8 brightness-0 invert" />
+          <div className="flex items-center gap-[5px]">
+            <span className="brand-symbol brand-symbol--footer" aria-hidden="true">
+              <img src="/hengyun-logo-transparent.png" alt="" className="brightness-0 invert" />
+            </span>
             <div>
               <div className="text-[15px] font-[650]">HENGYUN Technology</div>
               <div className="mt-1 text-[11px] text-white/45">Thermal Infrastructure Engineering</div>
