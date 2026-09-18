@@ -28,13 +28,56 @@ export default function Home() {
       <div><ol className="evidence-path" aria-label="Engineering pathway">{stages.map((stage) => <li key={stage}><span className="process-node" aria-hidden="true" /><span>{stage}</span></li>)}</ol><p className="process-note">Each stage reduces uncertainty and builds the evidence required for the next.</p></div>
     </div></section>
 
-    <section id="technologies" className="technology-band" aria-labelledby="technology-title"><div className="canvas-width technology-composition">
-      <div className="technology-heading"><p className="technical-label section-label">Technologies</p><h2 id="technology-title">Application Systems for Thermal Assets</h2></div>
-      <article className="steps-entry"><div className="steps-copy"><h3>STEPS</h3><p className="system-name">Sustainable Thermal Energy Pavement System</p><p className="technical-label">Pavement Application System</p><p>A pavement application system for managing the thermal behavior of paved Thermal Assets.</p></div><figure className="steps-study"><Image src="/Visuals/hengyun-steps-concept.webp" alt="Public-safe conceptual thermal interaction associated with pavement; not to scale" width={1942} height={809} sizes="(min-width: 901px) 55vw, 100vw" /><figcaption>Conceptual thermal interaction · Not to scale</figcaption></figure></article>
-      <aside className="future-concepts"><p className="technical-label">Future Concepts</p><div className="future-entries"><article><div className="concept-mark climate-mark" aria-hidden="true"><span /><span /><span /></div><h3>AMPS</h3><p className="system-name">Advanced Microclimate Pavement System</p><p className="technical-label">Future Concept</p></article><article><div className="concept-mark asset-mark" aria-hidden="true"><span /><span /><span /></div><h3>TEAMS</h3><p className="system-name">Thermal Energy &amp; Asset Management System</p><p className="technical-label">Future Concept</p></article></div></aside>
-    </div></section>
+    <section id="technologies" className="technology-band" aria-labelledby="technology-title">
+  <div className="canvas-width technology-composition">
+    <div className="technology-primary-copy">
+      <p className="technical-label section-label">Technologies</p>
+      <h2 id="technology-title">Application Systems for<br />Thermal Assets</h2>
 
-    <section id="research" className="research-band research-editorial" aria-labelledby="research-title">
+      <div className="steps-copy">
+        <h3>STEPS</h3>
+        <p className="system-name">Sustainable Thermal Energy Pavement System</p>
+        <p className="technical-label">Pavement Application System</p>
+        <p>A pavement application system for managing the thermal behavior of paved Thermal Assets.</p>
+      </div>
+    </div>
+
+    <figure className="steps-study">
+      <Image
+        unoptimized
+        src="/Visuals/hengyun-steps-concept.webp"
+        alt="Public-safe conceptual thermal interaction associated with pavement; not to scale"
+        width={1942}
+        height={809}
+        sizes="(min-width: 901px) 55vw, 100vw"
+      />
+      <figcaption>Conceptual thermal interaction · Not to scale</figcaption>
+    </figure>
+
+    <aside className="future-concepts">
+      <p className="technical-label">Future Concepts</p>
+      <div className="future-entries">
+        <article>
+          <div className="future-copy">
+            <h3>AMPS</h3>
+            <p className="system-name">Advanced Microclimate Pavement System</p>
+            <p>A future application concept for managing interactions between paved Thermal Assets and their surrounding microclimate.</p>
+          </div>
+        </article>
+
+        <article>
+          <div className="future-copy">
+            <h3>TEAMS</h3>
+            <p className="system-name">Thermal Energy &amp; Asset Management System</p>
+            <p>A future management concept for coordinating multiple Thermal Assets at the system level.</p>
+          </div>
+        </article>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="research" className="research-band research-editorial" aria-labelledby="research-title">
       <div className="canvas-width research-composition">
         <div className="research-heading">
           <p className="technical-label section-label">Research &amp; Intellectual Property</p>
