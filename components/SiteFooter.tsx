@@ -1,38 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#1b1f22] text-[#f4f3ef]">
-      <div className="mx-auto max-w-[1180px] px-6 py-10 md:px-8">
-        <div className="grid gap-10 border-b border-white/12 pb-9 md:grid-cols-[1.6fr_1fr_1fr]">
-          <div className="flex items-center gap-[5px]">
-            <span className="brand-symbol brand-symbol--footer" aria-hidden="true">
-              <img src="/hengyun-logo-transparent.png" alt="" className="brightness-0 invert" />
-            </span>
-            <div>
-              <div className="text-[15px] font-[650]">HENGYUN Technology</div>
-              <div className="mt-1 text-[11px] text-white/45">Thermal Infrastructure Engineering</div>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2 text-[13px] text-white/55">
-            <Link href="#about">About</Link>
-            <Link href="#engineering">Engineering</Link>
-            <Link href="#technologies">Technologies</Link>
-            <Link href="#contact">Contact</Link>
-          </div>
-
-          <div className="text-[13px] text-white/55">
-            <a href="mailto:founder@hengyun-tech.com" className="text-inherit no-underline">founder@hengyun-tech.com</a>
-          </div>
+    <footer className="canvas-footer">
+      <div className="canvas-width">
+        <div className="footer-top">
+          <Link href="/#top" className="brand-lockup">
+            <span className="brand-symbol brand-symbol--footer" aria-hidden="true"><Image src="/hengyun-logo-transparent.png" alt="" width={47} height={47} className="brand-inverted" /></span>
+            <span><span className="brand-name">HENGYUN Technology</span><span className="brand-tagline">Thermal Infrastructure Engineering</span></span>
+          </Link>
         </div>
-
-        <div className="pt-5 text-[11px] text-white/35">
-          <div>STEPS — Core Engineering System</div>
-          <div className="mt-1">RTSU — Current Engineering Prototype</div>
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} HENGYUN Technology</p>
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <Link href="/#engineering">Engineering</Link><Link href="/#technologies">Technologies</Link><Link href="/#research">Research</Link><Link href="/#development">Development</Link><Link href="/#collaboration">Collaboration</Link><Link href="/#contact">Contact</Link>
+          </nav>
         </div>
-
-        <div className="pt-5 text-[11px] text-white/30">© {new Date().getFullYear()} HENGYUN Technology</div>
       </div>
     </footer>
   );
