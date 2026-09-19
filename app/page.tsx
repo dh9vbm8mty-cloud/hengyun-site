@@ -83,27 +83,16 @@ export default function Home() {
           <p className="technical-label section-label">Research &amp; Intellectual Property</p>
           <h2 id="research-title">Engineering research to real-world impact.</h2>
         </div>
-        {/* Decorative category marks only: neither measured data nor a connected process. */}
         <div className="research-anchors">
           <article>
-            <svg className="evidence-mark evidence-mark--traces" viewBox="0 0 160 80" fill="none" aria-hidden="true" focusable="false">
-              <path d="M8 51C29 17 48 14 72 39S119 71 151 30" /><path d="M8 62C35 36 54 26 81 49S128 53 151 16" opacity=".65" /><path d="M8 35C39 63 56 67 83 35S127 18 151 42" opacity=".4" />
-            </svg>
             <h3 className="technical-label">Published Research</h3>
             <p>Research on pavement thermal behavior, heat transfer, and related built-environment thermal systems.</p>
           </article>
           <article>
-            <svg className="evidence-mark" viewBox="0 0 160 80" fill="none" aria-hidden="true" focusable="false">
-              <circle cx="34" cy="27" r="12" /><circle cx="111" cy="52" r="7" />
-              <path d="M63 15H109M57 37H87M22 62H73" />
-            </svg>
             <h3 className="technical-label">Current Engineering Development</h3>
             <p>Translating research into practical thermal infrastructure applications.</p>
           </article>
           <article>
-            <svg className="evidence-mark evidence-mark--document" viewBox="0 0 160 80" fill="none" aria-hidden="true" focusable="false">
-              <path d="M42 9H84L101 26V71H42ZM84 9V26H101M55 43H84M55 54H76" />
-            </svg>
             <h3 className="technical-label">Intellectual Property</h3>
             <p>Taiwan Utility Model Patent M686216</p>
             <p lang="zh-Hant">智慧導熱鋪面能源系統</p>
@@ -113,7 +102,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="development" className="development-band" aria-labelledby="development-title"><div className="canvas-width development-composition"><div><p className="technical-label section-label">Development Toward Field Learning</p><h2 id="development-title">From controlled validation to field evidence.</h2></div><div><ol className="maturity-line" aria-label="Development pathway">{development.map((stage, i) => <li key={stage} className={i > 1 ? "is-future" : i === 1 ? "is-current" : ""}><span className="maturity-node" aria-hidden="true" /><span>{stage}</span>{i === 1 && <small>Current development</small>}</li>)}</ol><p className="process-note">Current engineering development is building the evidence required for subsequent field evaluation.</p><p className="evidence-statement">Field performance will be reported when supported by measured evidence.</p></div></div></section>
+    <section id="development" className="development-band" aria-labelledby="development-title"><div className="canvas-width development-composition"><div><p className="technical-label section-label">Development Toward Field Learning</p><h2 id="development-title">From controlled validation to field evidence.</h2></div><div><ol className="maturity-line" aria-label="Development pathway">{development.map((stage, i) => <li key={stage} className={i > 2 ? "is-future" : i === 2 ? "is-current" : ""}><span className="maturity-node" aria-hidden="true" /><span>{stage}</span>{i === 2 && <small>Current development</small>}</li>)}</ol><p className="process-note">Current prototype development is building the evidence required for subsequent controlled validation and field evaluation.</p><p className="evidence-statement">Field performance will be reported when supported by measured evidence.</p></div></div></section>
 
     <section id="collaboration" className="collaboration-band" aria-labelledby="collaboration-title"><div className="canvas-width collaboration-composition"><div className="partner-heading"><p className="technical-label section-label">Field Demonstration &amp; Collaboration</p><h2 id="collaboration-title">Seeking sites and partners for controlled engineering validation.</h2></div><p className="partner-copy">HENGYUN is preparing for future field demonstration in paved environments where system operation, thermal behavior, and engineering measurements can be evaluated under defined conditions.</p><dl className="collaborator-list">{collaborators.map(([title, body]) => <div key={title}><dt>{title}</dt><dd>{body}</dd></div>)}</dl><a className="text-link" href="#contact">Discuss a potential demonstration or collaboration <span aria-hidden="true">→</span></a></div></section>
 

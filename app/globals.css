@@ -86,10 +86,9 @@
 .collaborator-list { grid-column: 2; grid-row: 1 / 4; grid-template-columns: 1.15fr 1fr; align-content: center; gap: 34px 40px; margin: 0; }
 .collaborator-list > div,
 .collaborator-list > div:first-child { border: 0; padding: 0; }
-.collaborator-list > div:nth-child(even) { padding-top: 28px; }
 .collaborator-list > div:before { content: ''; display: block; width: 42px; border-top: 1px solid #95a09a; margin-bottom: 18px; }
 .vnext .collaborator-list dd { font-size: 16px; }
-.collaborator-list dt { font-size: 12px; font-weight: 500; min-height: 0; margin-bottom: 12px; letter-spacing: .065em; }
+.collaborator-list dt { font-size: 12px; font-weight: 500; min-height: 1.8em; margin-bottom: 12px; letter-spacing: .065em; }
 .text-link { grid-column: 1; grid-row: 3; align-self: end; border: 0; font-size: 11px; }
 .contact-composition { min-height: 430px; align-items: center; padding-block: 85px; }
 .vnext .contact-band h2 { font-size: 38px; max-width: 500px; }
@@ -101,6 +100,7 @@
   .vnext .engineering-composition h2, .vnext .development-composition h2 { font-size: 28px; }
   .collaborator-list { grid-template-columns: 1.15fr 1fr; gap: 28px; }
   .collaborator-list > div:nth-child(3) { padding: 0; }
+  .collaborator-list dt { min-height: 0; }
 }
 @media (max-width: 900px) {
   .asset-composition, .engineering-composition, .development-composition { grid-template-columns: 1fr; gap: 30px; padding-block: 52px; min-height: 0; }
@@ -138,7 +138,6 @@
   .maturity-line .is-future { border-left-style: dashed; }
   .maturity-line li:last-child { border-left-color: transparent; padding-bottom: 0; }
   .collaborator-list { grid-template-columns: 1fr; gap: 28px; }
-  .collaborator-list > div:nth-child(even) { padding: 0; }
   .text-link { font-size: 11px; gap: 18px; }
   .contact-composition { padding-block: 52px; }
   .vnext .contact-band h2 { font-size: 32px; }
@@ -147,7 +146,7 @@
 /* Three independent evidence categories, not a research-to-patent sequence. */
 .research-editorial .research-composition {
   display: block;
-  min-height: 500px;
+  min-height: 0;
   padding-block: 56px;
 }
 .research-editorial .research-heading {
@@ -163,17 +162,6 @@
   border-top: 1px solid #445158;
 }
 .research-editorial .research-anchors article + article { border: 0; padding: 0; }
-.research-editorial .evidence-mark {
-  display: block;
-  width: 144px;
-  height: 72px;
-  margin-bottom: 20px;
-  color: #9aadb0;
-  stroke: currentColor;
-  stroke-width: 1.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .vnext .research-editorial .research-anchors h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -186,20 +174,9 @@
 @media (max-width: 900px) {
   .research-editorial .research-composition { min-height: 0; padding-block: 48px; }
   .research-editorial .research-anchors { grid-template-columns: 1fr; gap: 30px; }
-  .research-editorial .research-anchors article {
-    display: grid;
-    grid-template-columns: 144px minmax(0, 1fr);
-    column-gap: 30px;
-    align-content: start;
-  }
-  .research-editorial .evidence-mark { grid-column: 1; grid-row: 1 / 5; margin: 0; }
-  .research-editorial .research-anchors h3,
-  .research-editorial .research-anchors p { grid-column: 2; }
   .research-editorial .research-anchors article > p { max-width: 480px; }
 }
 @media (max-width: 600px) {
-  .research-editorial .research-anchors article { display: block; }
-  .research-editorial .evidence-mark { margin-bottom: 18px; }
   .research-editorial .research-anchors { gap: 36px; }
 }
 
@@ -213,8 +190,8 @@
 #development h2 { font-size: 32px; max-width: 820px; }
 #development .maturity-line { margin-top: 30px; }
 #development .maturity-line li { font-size: 14px; padding-right: 22px; }
-#development .maturity-line li:first-child { color: #485a4e; }
-#development .maturity-line li:first-child .maturity-node {
+#development .maturity-line li:nth-child(-n + 2) { color: #485a4e; }
+#development .maturity-line li:nth-child(-n + 2) .maturity-node {
   background: #627666;
   border-color: #627666;
 }
@@ -233,7 +210,7 @@
 #collaboration .collaborator-list {
   grid-column: 2;
   grid-row: 2 / 4;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px 40px;
   align-content: start;
 }
